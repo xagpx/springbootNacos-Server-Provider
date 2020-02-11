@@ -1,0 +1,20 @@
+spring:
+  cloud:
+      nacos:
+          config:
+             server-addr: 127.0.0.1:8848
+             namespace: 3ad4f00e-3725-4ce6-babe-631768e9e589
+             file-extension: yml
+             prefix: nacos-provider
+             group: DEV_GROUP
+          discovery: 
+             server-addr: 127.0.0.1:8848
+             namespace: 3ad4f00e-3725-4ce6-babe-631768e9e589
+             group: DEV_GROUP
+  zipkin:
+      base-url: http://127.0.0.1:9411
+  sleuth: 
+      sampler: 
+          probability: 1.0
+             
+             
